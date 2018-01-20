@@ -1,0 +1,7 @@
+1. the .csv files with the fund house names contain the unique mutual fund schemes of each fund house
+
+2. The file Unique_schemes.csv is a crude implementation of trying to figure out the diffreent fund schemes of a fund house.The reason this is created separately is coz usually a scheme has various
+types ('growth','dividend' etc..) so I have attempted to consider each scheme once.
+
+3. As with any priliminary analysis on raw data Unique_schemes.csv is not perfect,so a little bit of manual editing is done to make Unique_schemes_final.csv , which details the unique 'Open Ended' and 'All Equity' mutual funds of all 8 given fund houses.
+
