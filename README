@@ -1,0 +1,37 @@
+READ THIS FILE BEFORE EXECUTING ANY CODE OR USING ANY DATA
+
+1. All the original files given for this PS are placed in the DA_original_files folder.No changes have been made to the files in this folder.They have just been used as a pre-processing step and the resultant relevant data is palced in relevant folders
+
+######################################################################################################
+DATA EXPLANATION:
+
+1.) All_equity - This folder contains the NAV data of all 'All Equity' + 'Open Ended' funds given in the original dataset.The NAV data is put in csv files named as per the fund houses.
+
+2.) AUM_quarterly_dividend - contains the extracted quarterly AUM data of the 34 dividend funds given in the PS
+
+3.) AUM_quarterly_growth - contains the extracted quarterly AUM data of the 54 growth funds given in the PS
+
+4.) extracted_AUM_data  - 1. The csv Data for all available mutual funds of the 8 given fund houses 				     has been extracted from AmfiIndia and these are arranged by a mapping as 				     given by in the README.md file.
+
+			  2. Script used - extractData.py
+
+			  3. No need to use any of these files,all important info. has been extracted 				     and placed in other relevant folders.
+		          4. Mix contains the mixture of all data given in the folder.This has been 				     done to ease downstream analysis
+5.) NAV_data - This folder contains the NAV data of all the All_Equity + Open_Ended mutual funds given that have been extracted from the original data.The csv files are named as per the Fund ID and are arranged by folders of their corresponding fund house for easy access.
+
+6.) NAV_quarterly - Extracted Quaterly data for the 54(G) + 34(D) funds specified in the original problem sheet.No need to read any of these files, they are just a pre-cursor to the final forms which are placed in NAV_quarterly_padded folder
+
+7.) NAV_quarterly_padded - The difference between the padded files i.e. files in this folder(NAV_quarterly_padded) and the files in the folder NAV_quarterly is that in this folder all the NAVs data are padded i.e. I have added 0's for values of missing quarters so as to make downstream analysis easier.
+
+8.)Unique_scheme_names -   1. the .csv files with the fund house names contain the unique mutual fund 				      schemes of each fund house
+
+			   2. The file Unique_schemes.csv is a crude implementation of trying to 				      figure out the diffreent fund schemes of a fund house.The reason this 				      is created separately is coz usually a scheme has various
+			      types ('growth','dividend' etc..) so I have attempted to consider each 			              scheme once.
+
+			   3. As with any priliminary analysis on raw data Unique_schemes.csv is not 				      perfect,so a little bit of manual editing is done to make 			      Unique_schemes_final.csv , which details the unique 'Open Ended' and 				      'All Equity' mutual funds of all 8 given fund houses.
+
+######################################################################################################
+CODE EXPLANATION:
+
+
+
