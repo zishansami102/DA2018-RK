@@ -1,0 +1,2 @@
+The difference between the padded files i.e. files in this folder(NAV_quarterly_padded) and the files in the folder NAV_quarterly is that in this folder all the NAVs data are padded i.e. I have added 0's
+for values of missing quarters so as to make downstream analysis easier.
